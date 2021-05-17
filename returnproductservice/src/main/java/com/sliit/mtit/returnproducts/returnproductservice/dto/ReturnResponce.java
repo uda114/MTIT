@@ -5,7 +5,34 @@ public class ReturnResponce {
 	private String productID;
 	private String productName;
 	private String addproductID;
+	private String quantity;
+	private String price;
 	
+	
+	/**
+	 * @return the quantity
+	 */
+	public String getQuantity() {
+		return quantity;
+	}
+	/**
+	 * @param quantity the quantity to set
+	 */
+	public void setQuantity(String quantity) {
+		this.quantity = quantity;
+	}
+	/**
+	 * @return the price
+	 */
+	public String getPrice() {
+		return price;
+	}
+	/**
+	 * @param price the price to set
+	 */
+	public void setPrice(String price) {
+		this.price = price;
+	}
 	/**
 	 * @return the addproductID
 	 */
@@ -42,14 +69,10 @@ public class ReturnResponce {
 	public void setProductName(String productName) {
 		this.productName = productName;
 	}
-	/**
-	 * @return the quantity
-	 */
-	
-	
 	@Override
 	public String toString() {
-		return "ReturnResponce [productID=" + productID + ", productName=" + productName + ", addproductID=" + addproductID + "]";
+		return "ReturnResponce [productID=" + productID + ", productName=" + productName + ", addproductID="
+				+ addproductID + ", quantity=" + quantity + ", price=" + price + "]";
 	}
 
 	

@@ -29,6 +29,9 @@ public class ReturnServiceImpl {
 		var apcRequest = new APCRequset();
 		apcRequest.setProductName(returnRequest.getProductName());
 		apcRequest.setManufactureName(returnRequest.getManufactureName());
+		apcRequest.setQuantity(returnRequest.getQuantity());
+		apcRequest.setPrice(returnRequest.getPrice());
+		
 		
 		System.out.println("2st mark");
 		
@@ -38,10 +41,25 @@ public class ReturnServiceImpl {
 		
 		System.out.println("3st mark");
 		
+		
+		
 		var returnResponce = new ReturnResponce();
 		returnResponce.setProductID(UUID.randomUUID().toString());
 		returnResponce.setProductName(returnRequest.getProductName());
 		returnResponce.setAddproductID(aPCResponce.getBody().getProductID());
+		returnResponce.setQuantity(returnRequest.getQuantity());
+		returnResponce.setPrice(returnRequest.getPrice());
+		
+		
+		/*
+		 * int price = Integer.parseInt(returnResponce.getPrice()); int quantity =
+		 * Integer.parseInt(returnRequest.getQuantity());
+		 * 
+		 * String total = String.valueOf(quantity * price );
+		 * 
+		 * returnResponce.setPrice(total);
+		 */
+		
 		
 		System.out.println("4st mark");
 		

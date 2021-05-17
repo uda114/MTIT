@@ -4,6 +4,47 @@ public class ProductRequest {
 
 	private String productName;
 	private String manufactureName;
+	private String date;
+	private String price;
+	private String quantity;
+	
+	
+	/**
+	 * @return the date
+	 */
+	public String getDate() {
+		return date;
+	}
+	/**
+	 * @param date the date to set
+	 */
+	public void setDate(String date) {
+		this.date = date;
+	}
+	/**
+	 * @return the price
+	 */
+	public String getPrice() {
+		return price;
+	}
+	/**
+	 * @param price the price to set
+	 */
+	public void setPrice(String price) {
+		this.price = price;
+	}
+	/**
+	 * @return the quantity
+	 */
+	public String getQuantity() {
+		return quantity;
+	}
+	/**
+	 * @param quantity the quantity to set
+	 */
+	public void setQuantity(String quantity) {
+		this.quantity = quantity;
+	}
 	/**
 	 * @return the productName
 	 */
@@ -28,13 +69,10 @@ public class ProductRequest {
 	public void setManufactureName(String manufactureName) {
 		this.manufactureName = manufactureName;
 	}
-	/**
-	 * @return the date
-	 */
-	
 	@Override
 	public String toString() {
-		return "ProductResponce [productName=" + productName + ", manufactureName=" + manufactureName +  "]";
+		return "ProductRequest [productName=" + productName + ", manufactureName=" + manufactureName + ", date=" + date
+				+ ", price=" + price + ", quantity=" + quantity + "]";
 	}
 	
 

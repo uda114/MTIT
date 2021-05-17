@@ -4,12 +4,50 @@ public class APCResponce {
 
 	private String productID;
 	private String message;
-	
+	private String addproductID;
+	private String price;
+	private String quantity;
 	
 	/**
 	 * @return the addproductID
 	 */
 
+	/**
+	 * @return the price
+	 */
+	public String getPrice() {
+		return price;
+	}
+	/**
+	 * @param price the price to set
+	 */
+	public void setPrice(String price) {
+		this.price = price;
+	}
+	/**
+	 * @return the quantity
+	 */
+	public String getQuantity() {
+		return quantity;
+	}
+	/**
+	 * @param quantity the quantity to set
+	 */
+	public void setQuantity(String quantity) {
+		this.quantity = quantity;
+	}
+	/**
+	 * @return the addproductID
+	 */
+	public String getAddproductID() {
+		return addproductID;
+	}
+	/**
+	 * @param addproductID the addproductID to set
+	 */
+	public void setAddproductID(String addproductID) {
+		this.addproductID = addproductID;
+	}
 	/**
 	 * @return the productID
 	 */
@@ -37,8 +75,11 @@ public class APCResponce {
 	
 	@Override
 	public String toString() {
-		return "APCResponce [productID=" + productID + ", message=" + message +  "]";
+		return "APCResponce [productID=" + productID + ", message=" + message + ", addproductID=" + addproductID
+				+ ", price=" + price + ", quantity=" + quantity + "]";
 	}
+	
+	
 	
 
 	
