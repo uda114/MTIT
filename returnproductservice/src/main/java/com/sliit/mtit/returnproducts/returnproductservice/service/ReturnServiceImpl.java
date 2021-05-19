@@ -24,7 +24,7 @@ public class ReturnServiceImpl {
 	
 	public ReturnResponce createReturn(ReturnRequest returnRequest) {
 		
-		System.out.println("1st mark");
+		System.out.println("1st mark working");
 		
 		var apcRequest = new APCRequset();
 		apcRequest.setProductName(returnRequest.getProductName());
@@ -33,13 +33,13 @@ public class ReturnServiceImpl {
 		apcRequest.setPrice(returnRequest.getPrice());
 		
 		
-		System.out.println("2st mark");
+		System.out.println("2st mark working");
 		
 		String url = "http://localhost:8080/addProducts";
 		
 		ResponseEntity<APCResponce> aPCResponce =  restTemplate.postForEntity(url, apcRequest, APCResponce.class);
 		
-		System.out.println("3st mark");
+		System.out.println("3st mark working");
 		
 		
 		
@@ -61,7 +61,7 @@ public class ReturnServiceImpl {
 		 */
 		
 		
-		System.out.println("4st mark");
+		System.out.println("4st mark working");
 		
 		return returnResponce;
 		
