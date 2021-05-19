@@ -20,8 +20,6 @@ public class ReturnServiceImpl {
 	@Autowired
 	private RestTemplate restTemplate;
 	
-	
-	
 	public ReturnResponce createReturn(ReturnRequest returnRequest) {
 		
 		System.out.println("1st mark working");
@@ -32,7 +30,6 @@ public class ReturnServiceImpl {
 		apcRequest.setQuantity(returnRequest.getQuantity());
 		apcRequest.setPrice(returnRequest.getPrice());
 		
-		
 		System.out.println("2st mark working");
 		
 		String url = "http://localhost:8080/addProducts";
@@ -41,26 +38,13 @@ public class ReturnServiceImpl {
 		
 		System.out.println("3st mark working");
 		
-		
-		
 		var returnResponce = new ReturnResponce();
 		returnResponce.setProductID(UUID.randomUUID().toString());
 		returnResponce.setProductName(returnRequest.getProductName());
 		returnResponce.setAddproductID(aPCResponce.getBody().getProductID());
 		returnResponce.setQuantity(returnRequest.getQuantity());
 		returnResponce.setPrice(returnRequest.getPrice());
-		
-		
-		/*
-		 * int price = Integer.parseInt(returnResponce.getPrice()); int quantity =
-		 * Integer.parseInt(returnRequest.getQuantity());
-		 * 
-		 * String total = String.valueOf(quantity * price );
-		 * 
-		 * returnResponce.setPrice(total);
-		 */
-		
-		
+
 		System.out.println("4st mark working");
 		
 		return returnResponce;

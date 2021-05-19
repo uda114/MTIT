@@ -75,15 +75,5 @@ public class APCRequset {
 				+ ", price=" + price + ", quantity=" + quantity + "]";
 	}
 	
-	public String calc(double x, double y) {
-		
-		 x = Double.parseDouble(getPrice());
-		 y = Double.parseDouble(getQuantity());
-		 double z = x* y;
-		 
-		return String.valueOf(z);
-		
-		
-	}
 
 }
